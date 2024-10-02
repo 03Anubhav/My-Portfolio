@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>My Portfolio</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: rgb(5, 5, 63);
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(7, 7, 42);
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+
+      nav ul li a:hover {
+        font-size: 1.02rem;
+        color: rgb(78, 78, 154);
+      }
+
+      .left {
+        font-size: 1.5rem;
+        margin: 23px 0;
+      }
+
+      .firstSection {
+        margin: 120px 0px;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .firstSection > div {
+        width: 42%;
+      }
+
+      .leftSection {
+        font-size: 2.5rem;
+        width: 100%;
+      }
+
+      .leftSection .btns {
+        padding: 50px 0px;
+      }
+
+      .leftSection .btn {
+        border: 2px solid white;
+        border-radius: 6px;
+        background: rgb(25, 4, 25);
+        color: white;
+        padding: 23px;
+        border-color: white;
+        font-size: 20px;
+        cursor: pointer;
+      }
+
+      .rightSection img {
+        width: 80%;
+      }
+
+      .purple {
+        color: blueviolet;
+      }
+
+      .text-gray {
+        color: gray;
+      }
+
+      #element {
+        color: lavender;
+      }
+
+      .secondSection {
+        max-width: 80%;
+        margin: auto;
+        height: 80vw;
+      }
+
+      .secondSection h1 {
+        font-size: 1.9rem;
+      }
+
+      main hr {
+        border: 0;
+        background-color: rgb(151, 78, 78);
+        height: 0.6px;
+        margin: 40px 70px;
+      }
+
+      .secondSection .horizontal {
+        background: white;
+        margin: 56px 0;
+        width: 85vw;
+        height: 2px;
+        display: flex;
+      }
+
+      .secondSection .vertical {
+        background: white;
+        width: 1px;
+        height: 90px;
+        margin: 0 100px;
+      }
+
+      .image-top {
+        width: 30px;
+        position: relative;
+        top: -40px;
+        left: -15px;
+      }
+
+      .vertical-title {
+        position: relative;
+        top: 70px;
+        width: 150px;
+      }
+
+      .vertical-desc {
+        position: relative;
+        top: 90px;
+        color: grey;
+        font-size: 0.7rem;
+        width: 150px;
+      }
+
+      footer {
+        background-color: rgb(38, 14, 38);
+        /* height: 10rem; */
+      }
+
+      .footer {
+        display: flex;
+        padding: 23px 122px;
+        justify-content: space-evenly;
+      }
+
+      .footer ul {
+        list-style: none;
+      }
+
+      .footer > div {
+        width: 223px;
+      }
+
+      .footer-rights {
+        color: grey;
+        text-align: center;
+      }
+      .desc {
+        font-size: 0.6rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Anubhav's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Hi, My name is <span class="purple">Anubhav</span>
+          <div>and I am a passionate</div>
+          <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+          <span id="element"></span>
+          <script>
+            var typed = new Typed("#element", {
+              strings: [
+                "Web Developer.",
+                "Graphic Designer.",
+                "Video Editor.",
+                "Agriculturist.",
+              ],
+              typeSpeed: 50,
+            });
+          </script>
+          <div class="btns">
+            <button class="btn">Download Resume</button>
+            <button class="btn">Github</button>
+          </div>
+        </div>
+
+        <div class="rightSection"><img src="images/bg.png" alt="bg" /></div>
+      </section>
+
+      <hr />
+
+      <section class="secondSection">
+        <span class="text-gray">What I have done for</span>
+        <h1>Work Experience</h1>
+        <div class="horizontal">
+          <div class="vertical">
+            <img src="images/dev.png" alt="" class="image-top" />
+            <div class="vertical-title">
+              Escort Kubota Ltd.
+              <div class="desc">(1st April 2024 - 31st Aug 2024)</div>
+            </div>
+            <div class="vertical-desc">
+              Studied stages in Tractor Production, MQA(Manufacturing Quality
+              Analysis), Kanban System in Stores.
+            </div>
+          </div>
+          <div class="vertical">
+            <img src="images/dev.png" alt="" class="image-top" />
+            <div class="vertical-title">
+              Irrigation Department
+              <div class="desc">(3rd June 2023 - 3rd July 2023)</div>
+            </div>
+            <div class="vertical-desc">
+              Gained insights on irrigation canal system and cropping patterns.
+            </div>
+          </div>
+          <div class="vertical">
+            <img src="images/dev.png" alt="" class="image-top" />
+            <div class="vertical-title">
+              ICAR Delhi
+              <div class="desc">(Feb 2023)</div>
+            </div>
+            <div class="vertical-desc">
+              Learnt different types of farming methods and innovative
+              machineries used in agriculture and food processing.
+            </div>
+          </div>
+          <div class="vertical">
+            <img src="images/dev.png" alt="" class="image-top" />
+            <div class="vertical-title">
+              Nav Bharat Industries, Agra
+              <div class="desc">(Feb 2023)</div>
+            </div>
+            <div class="vertical-desc">
+              Learnt about manufacturing of various agricultural machines like
+              cultivators, threshers,etc.
+            </div>
+          </div>
+          <div class="vertical">
+            <img src="images/dev.png" alt="" class="image-top" />
+            <div class="vertical-title">
+              Singhal Cold Storage and Allied Industries
+              <div class="desc">(Feb 2023)</div>
+            </div>
+            <div class="vertical-desc">
+              Gained insights on the functioning of Cold Storage.
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-first">Anubhav's Developer Portfolio</div>
+        <div class="footer-second">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Services</li>
+          </ul>
+        </div>
+        <div class="footer-third">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Services</li>
+          </ul>
+        </div>
+        <div class="footer-fourth">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Services</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-rights">
+        www.anubhavsportfolio.com | All rights reserved
+      </div>
+    </footer>
+  </body>
+</html>
